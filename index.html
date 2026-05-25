@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Strassa | Músico & Audio Developer</title>
+    <link rel="icon" href="pedal.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-info-group {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .contact-info-card {
+            background: rgba(255,255,255,0.05);
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info-icon {
+            color: var(--accent-purple);
+        }
+
+        .contact-info-text,
+        .contact-info-link {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-info-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">HUGO <span>STRASSA</span></div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-label">• Unicamp • Audio Dev</div>
+            <h1>Guitarrista &<br>Audio Developer</h1>
+            <h2>Onde a alma da música encontra a precisão do código. Criando música e tecnologia com a mesma paixão.</h2>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Vamos conversar</a>
+                <a href="#projects" class="btn btn-secondary">Ver projetos</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header reveal">
+            <div class="section-label">Conheça</div>
+            <h2 class="section-title">Quem sou eu</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <img src="foto_hugo_gt.jpeg" alt="Hugo Strassa tocando guitarra">
+            </div>
+            <div class="about-text reveal">
+                <h3>Do palco ao código, da guitarra ao processador</h3>
+                <p>Nascido na música e criado na tecnologia. Sou guitarrista e estudante de <strong>Sistemas de Informação na Unicamp</strong>, onde mergulho fundo no universo do processamento digital de áudio.</p>
+                <p>Minha jornada musical é guiada pela busca do <span class="highlight">timbre que combina com o que está acontecendo</span>. Influenciado por lendas como <strong>John Mayer</strong>, a modernidade de <strong>Mateus Asato</strong> e a pegada única do time de produção de bandas como: AnaVitória, Lagum, Daparte, entre outros grupos, construo pontes entre o orgânico e o eletrônico.</p>
+                <p>Mas não paro nas cordas: como desenvolvedor focado em áudio (<strong>JUCE/C++</strong>), eu não apenas toco o instrumento — eu entendo e modifico a forma como o som é processado, desde o DSP até os plugins que uso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="duality">
+        <div class="section-header reveal">
+            <div class="section-label">Multifacetado</div>
+            <h2 class="section-title">O Universo Híbrido</h2>
+            <p class="section-subtitle">Onde a arte encontra a engenharia, e a criatividade se une à lógica.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <i class="fas fa-guitar skill-icon"></i>
+                <h3>Músico</h3>
+                <p>Guitarra, violão e produção musical. Apaixonado por timbres orgânicos, R&B, Soul e Pop Rock. Sempre em busca da expressão melódica.</p>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fas fa-laptop-code skill-icon"></i>
+                <h3>Audio Developer</h3>
+                <p>C++, Python, JUCE Framework e processamento digital de sinais. Criando ferramentas e plugins que transformam a forma como músicos interagem com o som.</p>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fas fa-sliders-h skill-icon"></i>
+                <h3>Produção & Plugins</h3>
+                <p>Construo texturas sonoras no Reaper integrando simulações como Neural DSP e 
+                    bibliotecas como Desolate Guitars. 
+                    Emprego alguns vst´s como: TyrellN6 e PG-8X, Chow Tape Model, Cassette 909, valhalla supermassive, TDR NOVA, entre outros.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header reveal">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Projetos</h2>
+        </div>
+        <div class="projects-container">
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Purplestone</h3>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Guitarra</span>
+                    <span class="tag">Arranjos</span>
+                    <span class="tag">Banda Autoral</span>
+                </div>
+                <p>Projeto autoral que funde o Rock Clássico com a pegada moderna do Pop/Soul. Atuo na construção das harmonias e na identidade sonora das guitarras, explorando texturas que vão do clean ao saturado, sempre priorizando a emoção e a narrativa musical.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <h3>Slow Vibes</h3>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">MPB</span>
+                    <span class="tag">Blues</span>
+                    <span class="tag">80's Rock</span>
+                    <span class="tag">Guitarra</span>
+                </div>
+                <p>Banda com foco na reinterpretação de MPB, Blues e sucessos do Rock dos anos 80. O espaço perfeito para aplicar dinâmicas orgânicas na guitarra, garantindo uma execução com muito feeling que respeita as raízes desses estilos.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fifth Essence</h3>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Prog Metal</span>
+                    <span class="tag">Guitarra</span>
+                </div>
+                <p>Experiência musical no circuito de Metal Progressivo. Essa participação foi fundamental para explorar ritmos não convencionais, refinar a técnica em arranjos mais pesados e consolidar com clareza minha identidade artística e escolhas estéticas de estilo hoje.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Audio Dev & DSP</h3>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">JUCE</span>
+                    <span class="tag">DSP</span>
+                    <span class="tag">Unicamp</span>
+                </div>
+                <p>Pesquisa e desenvolvimento em processamento digital de sinais. Criação de plugins VST e estudos sobre a física do som aplicada à música. Do algoritmo ao timbre final, entendendo cada etapa da cadeia de áudio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="reveal">
+            <div class="section-label">Entre em contato</div>
+            <h2 class="section-title">Vamos criar algo juntos?</h2>
+            <p class="section-subtitle">Disponível para shows, gravações, colaborações e projetos de tecnologia musical.</p>
+            
+            <div class="social-links">
+                <a href="https://instagram.com/hugostrassa" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://soundcloud.com/hugo-strassa-959922783" target="_blank" title="SoundCloud">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+                <a href="https://github.com/HgAxSt" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hugo-strassa-2847aa264" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                <div style="background: rgba(255,255,255,0.05); padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-envelope" style="color: var(--accent-purple);"></i>
+                    <span style="color: var(--text-secondary); font-size: 0.95rem;">hugostrassa@gmail.com</span>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.05); padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fab fa-whatsapp" style="color: var(--accent-purple);"></i>
+                    <a href="https://wa.me/5519999833625" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.95rem;">(19) 99983-3625</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Hugo Strassa. Feito com <span style="color: var(--accent-purple);">♥</span> código e música.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
