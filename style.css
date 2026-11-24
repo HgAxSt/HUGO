@@ -1199,3 +1199,13 @@ footer .logo {
   }
 
 }
+
+.share-area { background: var(--forest); color: var(--paper); text-align: center; padding: 0 7% 36px; }
+.share-area [hidden] { display: none; }
+.share-area button { cursor: pointer; }
+.share-area button:disabled { opacity: .65; cursor: wait; }
+#shareStatus { margin-top: 14px; font-size: 14px; }
+#shareFallback { max-width: 420px; margin: 16px auto 0; }
+#shareFallback label { display: block; font-size: 14px; margin-bottom: 8px; }
+#shareUrl { width: 100%; padding: 12px; border: 1px solid var(--sand); border-radius: 2px; background: var(--paper); color: var(--ink); font: inherit; }
+#shareUrl:focus-visible { outline: 3px solid var(--sand); outline-offset: 3px; }
